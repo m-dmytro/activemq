@@ -1,0 +1,9 @@
+server:
+  port: 8444
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    username: admin
+    password: admin
+  queue: VirtualTopicConsumers.consumer1.VirtualTopic.my-vtopic

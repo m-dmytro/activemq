@@ -1,0 +1,15 @@
+server:
+  port: 8441
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    username: admin
+    password: admin
+  queues:
+    durability:
+      queue: simple-queue
+      topic: simple-topic
+    sync-communication:
+      request-queue: sync.requestQueue
+      reply-queue: sync.replyQueue

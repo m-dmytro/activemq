@@ -1,0 +1,11 @@
+# Task 1, modules publisher+subscriber: check queue and topics (durable and non-durable subscriptions)
+POST http://localhost:8440/api/v1/send/TEXTTTT
+
+# Task 2, modules publisher+subscriber: check sync communications (predefined request and reply queues)
+POST http://localhost:8440/api/v1/send/syncqueues/TEXTTTT
+
+# Task 2, modules tempQueueProducer + tempQueueConsumer: check sync communications (predefined request and temporary reply queues)
+POST http://localhost:8443/api/v1/tempQueueClient/TEXTTTT
+
+# Task 3, modules virtualTopicProducer -> virtualTopicConsumer1 + virtualTopicConsumer2: check virtual topic + n subscribers
+POST http://localhost:8446/api/v1/publisher/virtualtopic/73548124124

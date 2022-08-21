@@ -1,0 +1,7 @@
+server:
+  port: 8443
+
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    queue: client.messages
